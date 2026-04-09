@@ -8,3 +8,8 @@ Base system:
 Strategy:
 - Hyprland as secondary session
 - Dotfiles managed with Git
+
+## Repositorios adicionales
+
+- COPR: solopasha/hyprland
+
