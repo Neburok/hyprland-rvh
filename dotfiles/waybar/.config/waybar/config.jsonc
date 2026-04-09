@@ -1,0 +1,31 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "pulseaudio"],
+
+  "clock": {
+    "format": "{:%H:%M}"
+  },
+
+  "network": {
+    "format-ethernet": "🔌 {ipaddr}",
+    "format-wifi": "📶 {essid} ({signalStrength}%)",
+    "format-disconnected": "❌"
+  },
+
+  "pulseaudio": {
+    "format": "🔊 {volume}%",
+    "format-muted": "🔇"
+  }
+}"modules-right": ["network", "pulseaudio", "clock"]{
+  "layer": "top",
+  "position": "top",
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "pulseaudio", "clock"]
+
+}

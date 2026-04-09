@@ -1,0 +1,17 @@
+* {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+window#waybar {
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#clock {
+  padding: 0 10px;
+}
+
+#battery, #network, #pulseaudio {
+  padding: 0 10px;
+}
