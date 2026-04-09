@@ -1,17 +1,29 @@
 * {
-  font-family: monospace;
-  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
 }
 
 window#waybar {
-  background: #1e1e2e;
+  background: rgba(30, 30, 46, 0.85);
+  color: #cdd6f4;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#workspaces button {
+  padding: 0 5px;
   color: #cdd6f4;
 }
 
-#clock {
-  padding: 0 10px;
+#workspaces button.active {
+  color: #89b4fa;
 }
 
-#battery, #network, #pulseaudio {
+#clock {
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+#network, #pulseaudio {
   padding: 0 10px;
 }
