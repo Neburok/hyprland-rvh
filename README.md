@@ -13,3 +13,11 @@ Strategy:
 
 - COPR: solopasha/hyprland
 
+## Fase 1 - Instalación base
+
+- Hyprland instalado desde COPR
+- Sesión disponible en SDDM
+- Primer arranque probado
+- Sistema KDE intacto
+
+
