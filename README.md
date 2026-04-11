@@ -1,26 +1,3 @@
-# Hyprland RVH Setup
-
-Base system:
-- Fedora 43
-- KDE Plasma
-- GPU: NVIDIA RTX 3060
-
-Strategy:
-- Hyprland as secondary session
-- Dotfiles managed with Git
-
-## Repositorios adicionales
-
-- COPR: solopasha/hyprland
-
-## Fase 1 - Instalación base
-
-- Hyprland instalado desde COPR
-- Sesión disponible en SDDM
-- Primer arranque probado
-- Sistema KDE intacto
-
-
 # Hyprland RVH
 
 Repositorio experimental para la configuración de un entorno de escritorio basado en Hyprland sobre Fedora.
@@ -74,7 +51,8 @@ hyprland-rvh/
 ├── dotfiles/
 │ ├── hypr/
 │ ├── waybar/
-│ └── wofi/
+│ ├── wofi/
+│ └── kitty/
 │
 ├── scripts/
 │
@@ -82,6 +60,25 @@ hyprland-rvh/
 │ └── wallpapers/
 │
 ├── README.md
+
+
+---
+
+## 🚀 Fases del proyecto
+
+### ✅ Fase 0 — Preparación
+- Creación de repositorio
+- Backup de configuración
+- Documentación inicial
+
+---
+
+### ✅ Fase 1 — Instalación base
+- Instalación de Hyprland (COPR)
+- Configuración NVIDIA
+- Validación como sesión alterna
+
+---
 
 ---
 
@@ -108,9 +105,9 @@ hyprland-rvh/
 
 ---
 
-### ✅ Fase 2.2 — Gestión con symlinks
-- Integración de dotfiles con el sistema
-- Uso de enlaces simbólicos (manual)
+### ✅ Fase 2.2 — Gestión de dotfiles
+- Uso de symlinks (manual)
+- Integración repo ↔ sistema
 - Eliminación de duplicación
 
 ---
@@ -153,7 +150,8 @@ hyprland-rvh/
 ### ✅ Fase 6 — Identidad visual
 - Paleta de colores consistente
 - Tipografía
-- Mejora de legibilidad
+- Transparencias (Kitty + Hyprland)
+- Blur del compositor
 
 ---
 
@@ -168,6 +166,13 @@ hyprland-rvh/
 - Integración de Thunar
 - Tema oscuro GTK
 - Atajos de acceso rápido
+
+---
+
+### ⏸️ Fase 8 — Automatización (pendiente)
+- Scripts personalizados
+- Modos de trabajo
+- Automatización basada en flujo real
 
 ---
 
@@ -192,9 +197,17 @@ input {
 }
 ```
 ## Autostart
-exec-once = waybar
+
+```ini
+ exec-once = waybar
 exec-once = mako
 exec-once = swaybg -i ~/projects/hyprland-rvh/assets/wallpapers/tu_imagen.jpg -m fill
+```
+
+## Transparencia (Kitty)
+background_opacity 0.5
+background #1e1e2e
+enable_wayland true
 
 ## 🧪 Estado actual
 
@@ -202,16 +215,25 @@ exec-once = swaybg -i ~/projects/hyprland-rvh/assets/wallpapers/tu_imagen.jpg -m
 ✔ Uso diario viable
 ✔ Configuración versionada
 ✔ Sistema reproducible
+✔ Estética consistente
+✔ Flujo híbrido teclado + mouse
+
+## Decisiones clave
+No automatizar prematuramente
+Priorizar uso real antes de optimización
+Mantener KDE como entorno seguro
+Configurar de forma incremental
 
 ## 🔮 Próximos pasos
-Scripts de automatización
+Automatización basada en uso real
+Scripts de entorno (modo trabajo, clase, etc.)
 Integración con flujo académico
-Launcher avanzado
+Mejora del launcher
 Reglas inteligentes por aplicación
 
 ## 📌 Notas
 
-Este repositorio es experimental y evoluciona continuamente.
+Este repositorio es experimental y evoluciona conforme al uso real del entorno.
 
 ## 👤 Autor
 
